@@ -1,0 +1,111 @@
+.contact {
+  width: 100%;
+  padding-left: 300px;
+  padding-right: 40px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+.contact .form-section {
+  width: 100%;
+  max-width: 800px;
+}
+.contact .form-section .label {
+  padding: 10px 0;
+  color: rgb(51, 51, 51);
+  display: flex;
+  align-items: end;
+}
+.contact .form-section .label p {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Noto Sans JP";
+  height: 27px;
+}
+.contact .form-section .label span {
+  color: rgb(91, 92, 100);
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  height: 21px;
+}
+.contact .form-section input {
+  width: 100%;
+  color: rgb(36, 37, 40);
+  padding: 10px 20px;
+  border: 1px solid rgba(36, 37, 40, 0.7);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact .form-section input::-moz-placeholder {
+  color: #B7B8BA;
+  font-weight: 700;
+}
+.contact .form-section input::placeholder {
+  color: #B7B8BA;
+  font-weight: 700;
+}
+.contact a.privacy {
+  color: rgba(36, 37, 40, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  -webkit-text-decoration: 1px solid underline rgba(36, 37, 40, 0.7);
+          text-decoration: 1px solid underline rgba(36, 37, 40, 0.7);
+}
+.contact .privacy-agree {
+  font-size: 14px;
+  font-weight: 500;
+}
+.contact .privacy-agree input[type=checkbox] {
+  margin-right: 10px;
+  backface-visibility: hidden;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  transform: scale(2, 2);
+  border: 1px solid rgb(51, 51, 51);
+  width: 13px;
+  height: 13px;
+}
+.contact button {
+  background-color: rgb(0, 137, 123);
+  padding: 10px 25px 10px 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  transition: all;
+  transition-duration: 300ms;
+}
+.contact button span {
+  display: inline-block;
+  padding: 5px;
+}
+.contact button .arrow {
+  transform: rotate(-45deg);
+  transition: all;
+  transition-duration: 300ms;
+}
+.contact button:hover {
+  background-color: #006E62;
+}
+.contact button:hover .arrow {
+  transform: rotate(0deg);
+}
+.contact #regex,
+.contact #valid_email,
+.contact #please_enter_name,
+.contact #please_enter_address,
+.contact #please_enter_birth_year,
+.contact #please_enter_email,
+.contact #please_enter_phone,
+.contact #please_enter_privacy {
+  color: red;
+  margin-top: 10px;
+}/*# sourceMappingURL=style_contact.css.map */

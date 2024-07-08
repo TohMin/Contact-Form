@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>https://taxi-mate.jp/</loc>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://taxi-mate.jp/about/</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-04T20:40:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://taxi-mate.jp/job/</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-04T20:40:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://taxi-mate.jp/contact/</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-04T20:40:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://taxi-mate.jp/registration/</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-04T20:40:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://taxi-mate.jp/job/01/</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-04T20:40:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://taxi-mate.jp/job/02/</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-04T20:40:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://taxi-mate.jp/job/03/</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-04T20:40:19+09:00</lastmod>
+</url>
+<url>
+  <loc>https://taxi-mate.jp/privacy/</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-07-04T20:40:19+09:00</lastmod>
+</url>
+
+</urlset>

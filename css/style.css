@@ -196,7 +196,7 @@
     background-color: white;
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 998;
     border-bottom: 1px solid rgba(36, 37, 40, 0.1);
     .header_wrapper {
       padding: 15px 20px;
@@ -204,9 +204,11 @@
       background-color: white;
       position: relative;
       border-bottom: 1px solid rgba(36, 37, 40, 0.1);
-      z-index: 999;
       figure {
+        z-index: 1000;
         max-width: 140px;
+        margin-bottom: 0px !important;
+        position: relative;
       }
       nav {
         display: none;
@@ -218,7 +220,7 @@
       position: fixed;
       width: 100%;
       top: 0px;
-      z-index: 1000;
+      z-index: 999;
       text-align: right;
       .wrapper {
         height: 100vh;
@@ -784,6 +786,12 @@
       }
     }
 
+    .registration-form {
+.title {
+  padding-top: 50px;
+}
+    }
+
     .accordion {
       padding: 0px 20px 60px;
       width: 100%;
@@ -997,7 +1005,7 @@
     }
   }
 
-  .contact {
+  .contact_page {
     .page_top {
       figure {
         display: none;
@@ -1019,6 +1027,110 @@
       }
     }
   }
+
+  /* .contact {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+
+    .form-section {
+      width: 100%;
+      max-width: 800px;
+      .label {
+        padding: 10px 0;
+        color: rgb(51, 51, 51);
+        display: flex;
+        align-items: end;
+        p {
+          font-size: 18px;
+          font-weight: 700;
+          font-family: "Noto Sans JP";
+          height: 27px;
+        }
+        span {
+          color: rgb(91, 92, 100);
+          margin-left: 10px;
+          font-size: 14px;
+          font-weight: 700;
+          height: 21px;
+        }
+      }
+      input {
+        width: 100%;
+        color: rgb(36, 37, 40);
+        padding: 10px 20px;
+        border: 1px solid rgba(36, 37, 40, 0.7);
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        &::placeholder {
+          color: #B7B8BA;
+          font-weight: 700;
+        }
+      }
+    }
+    a.privacy {
+      color: rgba(36, 37, 40, 0.7);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 28px;
+      text-decoration: 1px solid underline rgba(36, 37, 40, 0.7);
+    }
+    .privacy-agree {
+      font-size: 14px;
+      font-weight: 500;
+
+      input[type='checkbox'] {
+        margin-right: 10px;
+        backface-visibility: hidden;
+        appearance: auto;
+        transform: scale(2, 2);
+        border: 1px solid rgb(51, 51, 51);
+        width: 13px;
+        height: 13px;
+      }
+    }
+    button {
+      background-color: rgb(0, 137, 123);
+      padding: 10px 25px 10px 25px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      transition: all;
+      transition-duration: 300ms;
+
+      span {
+        display: inline-block;
+        padding: 5px;
+      }
+
+      .arrow {
+        transform: rotate(-45deg);
+        transition: all;
+        transition-duration: 300ms;
+      }
+
+      &:hover {
+        .arrow {
+          transform: rotate(0deg);
+        }
+        background-color: #006E62;
+      }
+    }
+
+    #regex {
+      color: red;
+      margin-top: 10px;
+    }
+  } */
 
 }
 
@@ -1408,8 +1520,8 @@
           }
         }
       }
-
-      footer {
+    }
+    footer {
         padding: 80px 150px;
         .copy {
           right: 150px;
@@ -1488,7 +1600,6 @@
           }
         }
       }
-    }
 
     .privacy {
       .pp {
@@ -1518,7 +1629,7 @@
       }
     }
 
-    .contact {
+    .contact_page {
       .page_top {
         .bg {
           display: flex;
@@ -1533,6 +1644,7 @@
       }
     }
   }
+
 
   @media screen and (min-width: 960px) {
     .page_link_02 {
@@ -1770,6 +1882,7 @@
         }
       }
     }
+
     .conditions {
       padding: 0px 150px 60px;
       .title {
@@ -1789,7 +1902,6 @@
         }
       }
     }
-  }
 
   .jobs-master {
     .flex {
@@ -1872,7 +1984,7 @@
       align-items: center;
 
       .remain_fields-number{
-        font-size: 24px;  
+        font-size: 24px;
         margin-left: 8px;
         font-weight: 700;
       }
@@ -1909,104 +2021,6 @@
           border-radius: 6px;
           padding: 5px 10px;
         }
-      }
-    }
-  }
-
-  .contact {
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 30px;
-
-    .form-section {
-      width: 100%;
-      max-width: 800px;
-      .label {
-        padding: 10px 0;
-        color: rgb(51, 51, 51);
-        display: flex;
-        align-items: end;
-        p {
-          font-size: 18px;
-          font-weight: 700;
-          font-family: "Noto Sans JP";
-          height: 27px;
-        }
-        span {
-          color: rgb(91, 92, 100);
-          margin-left: 10px;
-          font-size: 14px;
-          font-weight: 700;
-          height: 21px;
-        }
-      }
-      input {
-        width: 100%;
-        color: rgb(36, 37, 40);
-        padding: 10px 20px;
-        border: 1px solid rgba(36, 37, 40, 0.7);
-        border-radius: 4px;
-        font-size: 16px;
-        font-weight: 500;
-        &::placeholder {
-          color: #B7B8BA;
-          font-weight: 700;
-        }
-      }
-    }
-    a.privacy {
-      color: rgba(36, 37, 40, 0.7);
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 28px;
-      text-decoration: 1px solid underline rgba(36, 37, 40, 0.7);
-    }
-    .privacy-agree {
-      font-size: 14px;
-      font-weight: 500;
-
-      input[type='checkbox'] {
-        margin-right: 10px;
-        backface-visibility: hidden;
-        appearance: auto;
-        transform: scale(2, 2);
-        border: 1px solid rgb(51, 51, 51);
-        width: 13px;
-        height: 13px;
-      }
-    }
-    button {
-      background-color: rgb(0, 137, 123);
-      padding: 10px 25px 10px 25px;
-      color: white;
-      font-size: 18px;
-      font-weight: 700;
-      border-radius: 9999px;
-      display: flex;
-      align-items: center;
-      transition: all;
-      transition-duration: 300ms;
-
-      span {
-        display: inline-block;
-        padding: 5px;
-      }
-
-      .arrow {
-        transform: rotate(-45deg);
-        transition: all;
-        transition-duration: 300ms;
-      }
-      
-      &:hover {
-        .arrow {
-          transform: rotate(0deg);
-        }
-        background-color: #006E62;
       }
     }
   }

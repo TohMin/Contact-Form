@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .registration-form {
   font-family: "Noto Sans jp";
   display: flex;
@@ -5,9 +6,10 @@
   justify-content: center;
   width: 640px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 80px;
   font-size: 16px;
   font-weight: 400;
+  padding: 0px 20px;
 }
 .registration-form .header {
   color: #00897b;
@@ -32,7 +34,7 @@
   margin-left: 8px;
 }
 .registration-form .container {
-  padding-top: 24px;
+  padding: 24px 0px 0px 0px;
 }
 .registration-form .container .item {
   margin-bottom: 16px;
@@ -41,7 +43,7 @@
   margin-bottom: 8px;
 }
 .registration-form .container .item label.optional::after {
-  content: "Optional";
+  content: "任意";
   color: white;
   background-color: rgb(96, 125, 139);
   padding: 1px 2px;
@@ -52,7 +54,7 @@
   border-radius: 6px;
 }
 .registration-form .container .item label.required::after {
-  content: "Required";
+  content: "必須";
   color: white;
   background-color: rgb(244, 67, 54);
   padding: 1px 2px;
@@ -94,10 +96,103 @@
   text-decoration: none;
   color: rgb(251, 151, 25);
 }
+.registration-form .action {
+  margin-top: 40px;
+}
 .registration-form .action button {
   padding: 10px 0;
 }
 .registration-form .danger {
   background-color: rgb(253, 217, 215) !important;
   border-color: rgb(217, 83, 79) !important;
+}
+.registration-form .next {
+  border-color: rgb(251, 151, 25);
+  background-color: rgb(251, 151, 25);
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 20px;
+  height: 44px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.registration-form .back {
+  font-weight: 400;
+  font-size: 20px;
+  border-color: #90a5af;
+  background: #fff;
+  color: #7b919c;
+  margin-top: 10px;
+  height: 44px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.registration-form .bg-warning {
+  background-color: rgb(251, 151, 25) !important;
+}
+.registration-form .pro-bar {
+  margin-top: 40px;
+  display: flex;
+  height: 16px;
+  width: 100%;
+}
+.registration-form .progress {
+  width: 86%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #cfd8dc;
+  margin: 5px 0;
+  overflow: hidden;
+}
+.registration-form .pro-num {
+  color: rgb(251, 151, 25);
+  font-weight: 1000;
+}
+.registration-form input::-moz-placeholder {
+  font-size: 16px;
+}
+.registration-form input::placeholder {
+  font-size: 16px;
+}
+.registration-form select {
+  height: 37px;
+}
+.registration-form select option {
+  font-size: 16px;
+}
+.registration-form .warning {
+  background-color: #f2dede;
+  border-color: #ebcccc;
+  color: #a94442;
+  padding: 0.75rem 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  line-height: 165%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+.registration-form #regex,
+.registration-form #please_enter_age,
+.registration-form #please_enter_firstname,
+.registration-form #please_enter_lastname,
+.registration-form #please_enter_phonenumber,
+.registration-form #please_enter_privacy,
+.registration-form #valid_email {
+  color: #d9534f;
+}
+
+.form-control {
+  padding: 10px !important;
+}
+
+input,
+select {
+  font-size: 16px !important;
 }/*# sourceMappingURL=style_registration.css.map */
