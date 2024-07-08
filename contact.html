@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ja">
+<title>タクシーメイト</title>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description"
+		content="タクシーメイトはタクシー業界専門の転職支援サービスです。厳選した月給45万円以上が目指せる会社のみを紹介。タクシー業界を知り尽くしたキャリアアドバイザーがあなたの転職をサポートします。">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" href="images/favicons/favicon.ico">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
+</head>
+
+<body>
+	<header>
+		<article class="header_wrapper">
+			<figure>
+				<a href="https://taxi-mate.jp/">
+					<img src="images/logo.webp" alt="タクシーメイト希望を叶える転職サイト">
+				</a>
+			</figure>
+			<nav>
+				<ul>
+					<li>
+						<a href="about.html">
+							タクシーメイトとは
+						</a>
+						<a href="jobs.html">
+							求人一覧
+						</a>
+					</li>
+					<li>
+						<a href="https://taxi-mate.jp/contact" class="button b_mail">
+							<span>メールで求人を受け取る</span>
+						</a>
+						<a href="https://taxi-mate.jp/registration" class="button b_service">
+							<span>転職支援サービスに登録</span>
+						</a>
+						<a href="tel:0120-935-196" class="button b_tel">
+							お電話のご相談はこちらから
+							<span>
+								0120-935-196
+							</span>
+							<div>
+								<p>
+									<span>平日</span>
+									10:00-19:00
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</article>
+
+
+		<article class="header_sp">
+			<input type="checkbox" class="menu-btn" id="menu-btn">
+			<label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+			<div class="wrapper">
+				<ul class="menu">
+					<li>
+						<a href="about.html">タクシーメイトとは</a>
+						<a href="jobs.html">求人一覧</a>
+					</li>
+					<li>
+						<a href="https://taxi-mate.jp/registration" class="button b_service">
+							＼転職スピードNo.1／
+							<span>
+								転職支援サービスに登録(無料)
+							</span>
+						</a>
+						<a href="https://taxi-mate.jp/contact" class="button b_mail">
+							＼忙しいあなたは／
+							<span>
+								メールで求人を受け取る
+							</span>
+						</a>
+						<a href="tel:0120-935-196" class="button b_tel">
+							お電話のご相談はこちらから
+							<span>
+								0120-935-196
+							</span>
+							<div>
+								<p>
+									<span>平日</span>
+									10:00-19:00
+								</p>
+								<p>
+									<span>定休日</span>
+									土日・祝日
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</header>
+	<main>
+		<section class="contact">
+			<section class="page_top mb">
+				<article class="bg">
+					<div>
+						<p class="text_sub">
+							メールで求人を受け取りたい方はこちら
+						</p>
+						<h1>
+							メールで求人を受け取る
+						</h1>
+						<p class="text_sub">
+							東京都内のタクシー会社を知り尽くした担当者が、条件にマッチしたまずは1社を紹介します。<br>
+							お問い合わせ後、土日、祝日、年末年始を除く1営業日以内にまずはメールにてご連絡させていただきます。
+						</p>
+					</div>
+					<figure>
+						<img src="images/taxy_img.webp" alt="タクシーイラスト">
+					</figure>
+				</article>
+			</section>
+			<!--ここにフォームが入る-->
+			<section class="form">
+				<form class="contact" action="mail.service.php" method="POST">
+					<div class="form-section">
+						<div class="label">
+							<p>お名前</p>
+							<span>*</span>
+						</div>
+						<input name="name" placeholder="お名前をフルネームで記載してください" required >
+					</div>
+					<div  class="form-section">
+						<div  class="label">
+							<p>お住まいの住所</p>
+							<span>*</span>
+						</div>
+						<input name="address" placeholder="町名まで記載ください（例：東京都 台東区 東上野）" required >
+					</div>
+					<div class="form-section">
+						<div class="label">
+							<p>生まれ年</p>
+							<span>*</span>
+						</div>
+						<input name="birth_year" placeholder="例：1990年" required >
+					</div>
+					<div class="form-section">
+						<div class="label">
+							<p>メールアドレス</p>
+							<span>*</span>
+						</div>
+						<input name="email" placeholder="例：mail@taxi-mate.jp" required >
+					</div>
+					<div class="form-section">
+						<div class="label">
+							<p>電話番号</p>
+							<span>*</span>
+						</div>
+						<input name="phone" placeholder="例：080-1111-2222" required >
+					</div>
+					<a class="privacy" href="privacy">
+						プライバシーポリシーに同意の上でお問い合わせください。
+					</a>
+					<label class="privacy-agree">
+						<input type="checkbox" required>
+						同意する
+					</label>
+					<button>
+						<span>この内容で送信する</span>
+						<span class="arrow">
+							<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 8L16 8L8 0M16 8L8 16" stroke="#FBFBFB" stroke-width="2"/>
+							</svg>
+						</span>
+					</button>
+				</form>
+			</section>
+			<!--ここまでフォーム-->
+			<section class="page_link_02">
+				<div class="title">
+					<p>
+						どんなテクシー会社があるのかの質問だけでも構いません<br>
+						まずはお気軽にお問い合わせください
+					</p>
+					<h2>
+						さあ、今すぐドライバーになろう
+					</h2>
+				</div>
+				<div class="wrapper">
+					<article>
+						<span class="material-icons">
+							mood
+						</span>
+						<div>
+							<p>
+								＼転職スピードNo.1／
+							</p>
+							<h2>
+								無料で転職支援サービスに登録する
+							</h2>
+							<p>
+								タクシー業界を知り尽くしたアドバイザーが転職を支援します
+							</p>
+						</div>
+						<a href="https://taxi-mate.jp/registration" class="button b_service">
+							＼転職スピードNo.1／
+							<span>
+								転職支援サービスに登録(無料)
+							</span>
+						</a>
+					</article>
+					<article>
+						<span class="material-icons">
+							mail
+						</span>
+						<div>
+							<p>
+								＼忙しいあなたは／
+							</p>
+							<h2>
+								メールで求人を受け取る
+							</h2>
+							<p>
+								土日祝日を除く1営業日以内に求人をお送りいたします
+							</p>
+						</div>
+						<a href="https://taxi-mate.jp/contact" class="button b_mail">
+							＼忙しいあなたは／
+							<span>
+								メールで求人を受け取る
+							</span>
+						</a>
+					</article>
+					<article>
+						<span class="material-icons">
+							phone_in_talk
+						</span>
+						<div>
+							<p>
+								＼急ぎたいあなたは／
+							</p>
+							<h2>
+								今すぐお電話で相談
+							</h2>
+							<p>
+								数分のお電話のみで推薦書の作成とタクシー会社の紹介をします
+							</p>
+						</div>
+						<a href="tel:0120-935-196" class="button b_tel">
+							お電話のご相談はこちらから
+							<span>
+								0120-935-196
+							</span>
+							<div>
+								<p>
+									<span>平日</span>
+									10:00-19:00
+								</p>
+								<p>
+									<span>定休日</span>
+									土日・祝日
+								</p>
+							</div>
+						</a>
+					</article>
+				</div>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<figure>
+			<img src="images/logo.webp" alt="タクシーメイト希望を叶える転職サイト">
+		</figure>
+		<ul>
+			<li>
+				<a href="https://taxi-mate.jp">
+					ホーム
+				</a>
+				<a href="about.html">
+					タクシーメイトとは
+				</a>
+				<a href="jobs.html">
+					求人一覧
+				</a>
+			</li>
+			<li>
+				<a href="https://taxi-mate.jp/contact">
+					メールで求人を受け取る
+				</a>
+				<a href="https://taxi-mate.jp/registration">
+					転職支援サービスに登録
+				</a>
+			</li>
+			<li>
+				<a href="https://anytrail.jp/" target="_blank">
+					運営会社
+				</a>
+				<a href="privacy.html">
+					プライバシーポリシー
+				</a>
+			</li>
+		</ul>
+		<p class="copy">
+			© 2024 AnyTrail Inc. All Right Reserved.
+		</p>
+	</footer>
+</body>
+
+</html>
